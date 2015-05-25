@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>sbhs_client</name>
+  <key>sbhsremote_sbhs_client</key>
+  <category>sbhsremote</category>
+  <import>import gnuradio.sbhs_client</import>
+  <make>gnuradio.sbhs_client.sbhs_client($addr,$prt_nm,$fan_val,$heat_val)</make>
+    <param>
+	<name>address</name>
+	<key>addr</key>
+	<value></value>
+	<type>string</type>
+ </param>
+  <param>
+	<name>port number</name>
+	<key>prt_nm</key>
+	<value></value>
+	<type>real</type>
+ </param>
+  <param>
+	<name>Fan_Val</name>
+	<key>fan_val</key>
+	<value>10</value>
+	<type>real</type>
+ </param>
+ <param>
+	<name>Heat_Val</name>
+	<key>heat_val</key>
+	<value>20</value>
+	<type>real</type>
+</param>
+ <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+  <doc>
+  Enter the Server Address(e.g 127.0.0.1) and Port Number(5000) to enable the Server communication
+  Enter Fan and Heat Value
+  </doc> 
+</block>
